@@ -68,8 +68,8 @@ document.getElementById("date&time").innerHTML = d;
              Content soon come
          </pre>
         </p>
-          <div id=”chart_div”></div>
-     <script type=”text/javascript”>
+          <div id=”chart_div”>
+                <script type=”text/javascript”>
 google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
 google.charts.setOnLoadCallback(drawChart)
       function drawChart() {
@@ -107,4 +107,5 @@ chart.draw(data, options);
  // Add a click event listener to the button
  button.addEventListener("click", changeColor);
  </script>
+          </div>
 </html>
