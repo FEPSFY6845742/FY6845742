@@ -1,111 +1,112 @@
 <!DOCTYPE html>
- <!style for tables>
-      <style>
-        table {
-          font-family: calibri;
-          border-collapse: collapse;
-          width: 30%;
-        }
-
-        td, th {
-          border: 1px solid #ffffff;
-          text-align: centre;
-          padding: 8px;
-        }
-
-      tr:nth-child(even) {
-        background-color: #469642;
-      }
-    </style>
-    <style>
-      p.ex1 {
-        margin-left: 250px;
-      }
-    </style>
-      <meta name="viewport" content="width=device-width, initial-scale=!">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlide (display:none;)
-    </style>
-    <body style="background-color:#FFFFFF;margin-left:50px;">
-<html>
-  <head>
-   <img src ="download.png" alt="Banner" width="1200" height="300">
-    <h1><b>ENG0018 Computer Laboratory 2023/2024</b></h1>
-    <h2>Student URN: 6845742</h2>
-    <hr>
-    <h2 style="font-family:calibri;"><b>Conference Paper: To what extent can hydropower tackle the renewable energy crisis? </b>
-     <!table of contents>
-     <table>
-      <tr>
-       <th><h3>Table of contents</h3></th>
-      </tr>
-      <tr>
-       <td><a href="#Abstract">Abstract</td>
-      </tr>
-      <tr>
-       <td><a href="#Introduction">Introduction</td>
-      </tr>
-      <tr>
-       <td><a href="#Analysis and discussion">Analysis and discussion</td>
-      </tr>
-      <tr>
-       <td><a href=#References">References</td>
-      </tr>
-     </table>
-     <p id="date&time"></p>
-<script>
-//Javascript to display the date and time on my webpage
-const d = new Date();
-document.getElementById("date&time").innerHTML = d;
-</script>
-     <title>My Daily Activities</title>
-<script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
-  </head>
-    <body>
-        <p class="ex1">
+<!style for tables>
+<style>
+   table {
+   font-family: calibri;
+   border-collapse: collapse;
+   width: 30%;
+   }
+   td, th {
+   border: 1px solid #ffffff;
+   text-align: centre;
+   padding: 8px;
+   }
+   tr:nth-child(even) {
+   background-color: #469642;
+   }
+</style>
+<style>
+   p.ex1 {
+   margin-left: 250px;
+   }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=!">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+   .mySlide (display:none;)
+</style>
+<body style="background-color:#FFFFFF;margin-left:50px;">
+   <html>
+      <head>
+         <img src ="download.png" alt="Banner" width="1200" height="300">
+         <h1><b>ENG0018 Computer Laboratory 2023/2024</b></h1>
+         <h2>Student URN: 6845742</h2>
+         <hr>
+         <h2 style="font-family:calibri;">
+         <b>Conference Paper: To what extent can hydropower tackle the renewable energy crisis? </b>
+         <!table of contents>
+         <table>
+            <tr>
+               <th>
+                  <h3>Table of contents</h3>
+               </th>
+            </tr>
+            <tr>
+               <td><a href="#Abstract">Abstract</td>
+            </tr>
+            <tr>
+               <td><a href="#Introduction">Introduction</td>
+            </tr>
+            <tr>
+               <td><a href="#Analysis and discussion">Analysis and discussion</td>
+            </tr>
+            <tr>
+               <td><a href=#References">References</td>
+            </tr>
+         </table>
+         <p id="date&time"></p>
+         <script>
+            //Javascript to display the date and time on my webpage
+            const d = new Date();
+            document.getElementById("date&time").innerHTML = d;
+         </script>
+         <title>My Daily Activities</title>
+         <script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
+      </head>
+      <body>
+         <p class="ex1">
          <pre>
              Content soon come
          </pre>
-        </p>
-          <div id=”chart_div”>
-                <script type=”text/javascript”>
-                   google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-                   google.charts.setOnLoadCallback(drawChart)
-                     function drawChart() {
-                          var data = google.visualization.arrayToDataTable([
-                              [‘Task’, ‘Hours per Day’],
-                              [‘Work’, 8],
-                              [‘Sleep’, 8],
-                              [‘Eat’, 2],
-                              [‘Study’, 4],
-                              [‘Exercise’, 2]
-                          ]);
-                          var options = {
-                              title: ‘My Daily Activities’
-                          };
-                          var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-                          chart.draw(data, options);
-                     }
-              </script>
-        <p>
-         <h3 id="Analysis and discussion">Analysis and discussion</h3>
-        </p>
-     <button id="colorButton">Click me to change colour</button
-    </body>
-  <script>
- // Get a reference to the button element
- var button = document.getElementById("colorButton");
- // Function to change the button color
- function changeColor() {
- // Generate a random color (hexadecimal)
- var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
- 
- // Set the button's background color to the random color
- button.style.backgroundColor = randomColor;
- }
- // Add a click event listener to the button
- button.addEventListener("click", changeColor);
- </script>
-          </div>
-</html>
+         </p>
+         <div id=”chart_div”>
+            <script type=”text/javascript”>
+               google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
+               google.charts.setOnLoadCallback(drawChart)
+                 function drawChart() {
+                      var data = google.visualization.arrayToDataTable([
+                          [‘Task’, ‘Hours per Day’],
+                          [‘Work’, 8],
+                          [‘Sleep’, 8],
+                          [‘Eat’, 2],
+                          [‘Study’, 4],
+                          [‘Exercise’, 2]
+                      ]);
+                      var options = {
+                          title: ‘My Daily Activities’
+                      };
+                      var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
+                      chart.draw(data, options);
+                 }
+            </script>
+            <p>
+            <h3 id="Analysis and discussion">Analysis and discussion</h3>
+            </p>
+            <button id="colorButton">Click me to change colour</button
+      </body>
+      <script>
+         // Get a reference to the button element
+         var button = document.getElementById("colorButton");
+         // Function to change the button color
+         function changeColor() {
+         // Generate a random color (hexadecimal)
+         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+         
+         // Set the button's background color to the random color
+         button.style.backgroundColor = randomColor;
+         }
+         // Add a click event listener to the button
+         button.addEventListener("click", changeColor);
+      </script>
+      </div>
+   </html>
