@@ -69,5 +69,20 @@ document.getElementById("date&time").innerHTML = d;
         <p>
          <h3 id="Analysis and discussion">Analysis and discussion</h3>
         </p>
+     <button id="colorButton">Click me to change colour</button
     </body>
+  <script>
+ // Get a reference to the button element
+ var button = document.getElementById("colorButton");
+ // Function to change the button color
+ function changeColor() {
+ // Generate a random color (hexadecimal)
+ var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+ 
+ // Set the button's background color to the random color
+ button.style.backgroundColor = randomColor;
+ }
+ // Add a click event listener to the button
+ button.addEventListener("click", changeColor);
+ </script>
 </html>
