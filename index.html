@@ -101,7 +101,7 @@
       <script>
          // Array of slide image URLs
          var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"];
-         var current slide = 0;
+         var currentslide = 0;
          function showSlide() {
             document.getElementById('slide').src = slideImages[currentSlide];
          }
@@ -113,7 +113,7 @@
             currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
             showSlide();
          }
-         function showSlideNNumber(slidenumber) {
+         function showSlideNumber(slidenumber) {
             currentSlide = slideNumber - 1;
             showSlide();
          }
