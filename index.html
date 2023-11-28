@@ -1,138 +1,141 @@
 <!DOCTYPE html>
-<!style for tables>
-<style>
-            #slide-container {
-            text-align: center;
-            position: relative;
-         }
+<head>
+   <style>
+      #slide-container {
+         text-align: center;
+         position: relative;
+      }
 
-         .button-container{
-            position:absolute;
-            bottom:0;
-            left:50%;
-            transform: translateX(-50%);
-            margin-bottom: -100px;
-         }
-         .button{
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color:white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px
-            cursor: pointer;
-            margin: 0 5px;
-         }
+      .button-container {
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         margin-bottom: -100px;
+      }
 
-            .slide-number-container{
-            position:absolute;
-            bottom:0;
-            left:50%;
-            transform: translateX(-50%);
-            margin-bottom: -50px;
-         }
-   table {
-   font-family: calibri;
-   border-collapse: collapse;
-   width: 30%;
-   }
-   td, th {
-   border: 1px solid #ffffff;
-   text-align: centre;
-   padding: 8px;
-   }
-   tr:nth-child(even) {
-   background-color: #469642;
-   }
-</style>
-<style>
-   p.ex1 {
-   margin-left: 250px;
-   }
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=!">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-   .mySlide (display:none;)
-</style>
+      .button {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         font-size: 16px;
+         cursor: pointer;
+         margin: 0 5px;
+      }
+
+      .slide-number-container {
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         margin-bottom: -50px;
+      }
+
+      table {
+         font-family: calibri;
+         border-collapse: collapse;
+         width: 30%;
+      }
+
+      td, th {
+         border: 1px solid #ffffff;
+         text-align: center;
+         padding: 8px;
+      }
+
+      tr:nth-child(even) {
+         background-color: #469642;
+      }
+
+      p.ex1 {
+         margin-left: 250px;
+      }
+
+      .mySlide {
+         display: none;
+      }
+   </style>
+</head>
 <body style="background-color:#FFFFFF;margin-left:50px;">
-   <html>
-      <head>
-         <img src ="download.png" alt="Banner" width="1200" height="300">
-         <h1><b>ENG0018 Computer Laboratory 2023/2024</b></h1>
-         <h2>Student URN: 6845742</h2>
-         <hr>
-         <h2 style="font-family:calibri;">
-         <b>Conference Paper: To what extent can hydropower tackle the renewable energy crisis? </b>
-         <!table of contents>
-         <table>
-            <tr>
-               <th>
-                  <h3>Table of contents</h3>
-               </th>
-            </tr>
-            <tr>
-               <td><a href="#Abstract">Abstract</td>
-            </tr>
-            <tr>
-               <td><a href="#Introduction">Introduction</td>
-            </tr>
-            <tr>
-               <td><a href="#Analysis and discussion">Analysis and discussion</td>
-            </tr>
-            <tr>
-               <td><a href=#References">References</td>
-            </tr>
-         </table>
-         <p id="date&time"></p>
-         <title>My Daily Activities</title>
-         <script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
-      </head>
-      <body>
-         <p class="ex1">
-         <pre>
-             Content soon come
-         </pre>
-         </p>
-            <p>
-            <h3 id="Analysis and discussion">Analysis and discussion</h3>
-            </p>
-                        <h2> Conference Presentation: From the Brink of Bankruptcy to European Glory: Brighton's Data-Driven Scouting Miracle </h2>
-      <script>
-         // Array of slide image URLs
-         var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"];
-         var currentslide = 0;
-         function showSlide() {
-            document.getElementById('slide').src = slideImages[currentSlide];
-         }
-         function nextSlide() {
-            currentSlide = (currentSlide + 1) % slideImages.length;
-            showSlide();
-         }
-         function prevSlide() {
-            currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-            showSlide();
-         }
-         function showSlideNumber(slidenumber) {
-            currentSlide = slideNumber - 1;
-            showSlide();
-         }
-         showSlide();
-      </script>
-      <div id="slide-container">
-         <img id="slide" src="Slide1.jpg" alt="Slide 1" style="width:100%;  max-width:800px;">
-      <div class="button-container">
-         <button class="button" onclick="prevSlide()">Previous</button>
-         <button class="button" onclick="nextSlide()">Next</button>
-      </div>
 
-      <div class="slide-number-container">
+   <img src="download.png" alt="Banner" width="1200" height="300">
+   <h1><b>ENG0018 Computer Laboratory 2023/2024</b></h1>
+   <h2>Student URN: 6845742</h2>
+   <hr>
+   <h2 style="font-family:calibri;">
+      <b>Conference Paper: To what extent can hydropower tackle the renewable energy crisis? </b>
+   </h2>
+
+   <table>
+      <tr>
+         <th>
+            <h3>Table of contents</h3>
+         </th>
+      </tr>
+      <tr>
+         <td><a href="#Abstract">Abstract</a></td>
+      </tr>
+      <tr>
+         <td><a href="#Introduction">Introduction</a></td>
+      </tr>
+      <tr>
+         <td><a href="#AnalysisDiscussion">Analysis and discussion</a></td>
+      </tr>
+      <tr>
+         <td><a href="#References">References</a></td>
+      </tr>
+   </table>
+
+   <p id="date&time"></p>
+
+   <h3 id="AnalysisDiscussion">Analysis and discussion</h3>
+   <h2>Conference Presentation: From the Brink of Bankruptcy to European Glory: Brighton's Data-Driven Scouting Miracle </h2>
+
+   <script>
+      // Array of slide image URLs
+      var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jpg", "Slide4.jpg", "Slide5.jpg"];
+      var currentSlide = 0;
+
+      function showSlide() {
+         document.getElementById('slide').src = slideImages[currentSlide];
+      }
+
+      function nextSlide() {
+         currentSlide = (currentSlide + 1) % slideImages.length;
+         showSlide();
+      }
+
+      function prevSlide() {
+         currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+         showSlide();
+      }
+
+      function showSlideNumber(slideNumber) {
+         currentSlide = slideNumber - 1;
+         showSlide();
+      }
+
+      showSlide();
+   </script>
+
+   <div id="slide-container">
+      <img id="slide" src="Slide1.jpg" alt="Slide 1" style="width:100%;  max-width:800px;">
+   </div>
+
+   <div class="button-container">
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+   </div>
+
+   <div class="slide-number-container">
       <button class="button" onclick="showSlideNumber(1)">1</button>
       <button class="button" onclick="showSlideNumber(2)">2</button>
       <button class="button" onclick="showSlideNumber(3)">3</button>
       <button class="button" onclick="showSlideNumber(4)">4</button>
       <button class="button" onclick="showSlideNumber(5)">5</button>
-      </div>
-      </body>
+   </div>
 
-   </html>
+</body>
+</html>
