@@ -85,11 +85,6 @@
             </tr>
          </table>
          <p id="date&time"></p>
-         <script>
-            //Javascript to display the date and time on my webpage
-            const d = new Date();
-            document.getElementById("date&time").innerHTML = d;
-         </script>
          <title>My Daily Activities</title>
          <script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
       </head>
@@ -104,40 +99,7 @@
             </p>
             <button id="colorButton">Click me to change colour</button>
             <div id=”chart_div”></div>
-            <script type=”text/javascript”>
-               google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-               google.charts.setOnLoadCallback(drawChart)
-                 function drawChart() {
-                      var data = google.visualization.arrayToDataTable([
-                          [‘Task’, ‘Hours per Day’],
-                          [‘Work’, 8],
-                          [‘Sleep’, 8],
-                          [‘Eat’, 2],
-                          [‘Study’, 4],
-                          [‘Exercise’, 2]
-                      ]);
-                      var options = {
-                          title: ‘My Daily Activities’
-                      };
-                      var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
-                      chart.draw(data, options);
-                 }
-            </script>
       </body>
-      <script>
-         // Get a reference to the button element
-         var button = document.getElementById("colorButton");
-         // Function to change the button color
-         function changeColor() {
-         // Generate a random color (hexadecimal)
-         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-         
-         // Set the button's background color to the random color
-         button.style.backgroundColor = randomColor;
-         }
-         // Add a click event listener to the button
-         button.addEventListener("click", changeColor);
-      </script>
       <h2> Conference Presentation: From the Brink of Bankruptcy to European Glory: Brighton's Data-Driven Scouting Miracle </h2>
       <script>
          // Array of slide image URLs
